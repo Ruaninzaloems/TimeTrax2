@@ -1,0 +1,987 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProductVersion>7.10.6030</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26B701A1-E33F-4976-9ACE-3E4CC8175BDF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>TimeTrax</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>TimeTrax</RootNamespace>
+    <StartupObject>default.aspx</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <UpgradeBackupLocation />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TimeTrax.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TimeTrax.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermap.Communication">
+      <Name>Intermap.Communication</Name>
+    </Reference>
+    <Reference Include="Intermap.Controls">
+      <Name>Intermap.Controls</Name>
+    </Reference>
+    <Reference Include="Intermap.DataLayer">
+      <Name>Intermap.DataLayer</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Intermap.Communication" />
+    <Import Include="Intermap.Controls" />
+    <Import Include="Intermap.DataLayer" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SQLClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="TimeTrax.BusinessLogicLayer" />
+    <Import Include="TimeTrax.Portal.Emailing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\ApprovalTypes.aspx.vb">
+      <DependentUpon>ApprovalTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BudgetItems.aspx.vb">
+      <DependentUpon>BudgetItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Clients.aspx.vb">
+      <DependentUpon>Clients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Contacts.aspx.vb">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CostCentres.aspx.vb">
+      <DependentUpon>CostCentres.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Countries.aspx.vb">
+      <DependentUpon>Countries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Currencies.aspx.vb">
+      <DependentUpon>Currencies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ExpenseItems.aspx.vb">
+      <DependentUpon>ExpenseItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FinancialDocTypeEmail.aspx.vb">
+      <DependentUpon>FinancialDocTypeEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FinancialDocTypeEmailAdd.aspx.vb">
+      <DependentUpon>FinancialDocTypeEmailAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FinancialDocTypeEmailDelete.aspx.vb">
+      <DependentUpon>FinancialDocTypeEmailDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GroupNames.aspx.vb">
+      <DependentUpon>GroupNames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RoleNames.aspx.vb">
+      <DependentUpon>RoleNames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SystemAdmin.aspx.vb">
+      <DependentUpon>SystemAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TimeOffTypes.aspx.vb">
+      <DependentUpon>TimeOffTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.vb">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approvals\Expense.aspx.vb">
+      <DependentUpon>Expense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approvals\FinancialDocument.aspx.vb">
+      <DependentUpon>FinancialDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approvals\PTO.aspx.vb">
+      <DependentUpon>PTO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approvals\Timesheet.aspx.vb">
+      <DependentUpon>Timesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Approvals\VO.aspx.vb">
+      <DependentUpon>VO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Capture\AddProject.aspx.vb">
+      <DependentUpon>AddProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capture\AddTask.aspx.vb">
+      <DependentUpon>AddTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capture\AddTimeOff.aspx.vb">
+      <DependentUpon>AddTimeOff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capture\Expense.aspx.vb">
+      <DependentUpon>Expense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capture\ExpenseRejected.aspx.vb">
+      <DependentUpon>ExpenseRejected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capture\ExpenseSubmitted.aspx.vb">
+      <DependentUpon>ExpenseSubmitted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capture\FinancialDocumentRejected.aspx.vb">
+      <DependentUpon>FinancialDocumentRejected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capture\Timesheet.aspx.vb">
+      <DependentUpon>Timesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\Classes\BusinessLogicLayer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\Classes\Common.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\Classes\DAL.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\Classes\WebMails.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\ExpensesReport.ascx.vb">
+      <DependentUpon>ExpensesReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\FinancialDocuments.ascx.vb">
+      <DependentUpon>FinancialDocuments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\Footer.ascx.vb">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\header.ascx.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\Orders.ascx.vb">
+      <DependentUpon>Orders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\ProjectDocuments.ascx.vb">
+      <DependentUpon>ProjectDocuments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\ProjectInfo.ascx.vb">
+      <DependentUpon>ProjectInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\ProjectSummary.ascx.vb">
+      <DependentUpon>ProjectSummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\ReportFilters.ascx.vb">
+      <DependentUpon>ReportFilters.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\Selections.ascx.vb">
+      <DependentUpon>Selections.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\User Controls\TopTabs.ascx.vb">
+      <DependentUpon>TopTabs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details\ClientDetails.aspx.vb">
+      <DependentUpon>ClientDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details\Clients.aspx.vb">
+      <DependentUpon>ClientDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details\ClientsDetails.aspx.vb">
+      <DependentUpon>ClientDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details\ContactDetails.aspx.vb">
+      <DependentUpon>ContactDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dynAdd.aspx.vb">
+      <DependentUpon>dynAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Help\Links.aspx.vb">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.vb">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\AddClient.aspx.vb">
+      <DependentUpon>AddClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\AddContact.aspx.vb">
+      <DependentUpon>AddContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\AddResource.aspx.vb">
+      <DependentUpon>AddResource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\ChangeTeamleader.aspx.vb">
+      <DependentUpon>ChangeTeamleader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\CloseOut.aspx.vb">
+      <DependentUpon>CloseOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\MyProjects.aspx.vb">
+      <DependentUpon>MyProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\OrderInfo.aspx.vb">
+      <DependentUpon>OrderInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectCloseOut.aspx.vb">
+      <DependentUpon>ProjectCloseOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectInfo.aspx.vb">
+      <DependentUpon>ProjectInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectListing.aspx.vb">
+      <DependentUpon>ProjectListing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectTakeOn.aspx.vb">
+      <DependentUpon>ProjectTakeOn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectVO.aspx.vb">
+      <DependentUpon>ProjectVO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\SelectProject.aspx.vb">
+      <DependentUpon>SelectProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\UpdateResource.aspx.vb">
+      <DependentUpon>UpdateResource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\Upload.aspx.vb">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\UploadFinancialDoc.aspx.vb">
+      <DependentUpon>UploadFinancialDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\ViewFinancialDocument.aspx.vb">
+      <DependentUpon>ViewFinancialDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\DataExtract.aspx.vb">
+      <DependentUpon>DataExtract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Exceptions.aspx.vb">
+      <DependentUpon>Exceptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ExpenseReimbursements.aspx.vb">
+      <DependentUpon>ExpenseReimbursements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Expenses.aspx.vb">
+      <DependentUpon>Expenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\NoDataFound.aspx.vb">
+      <DependentUpon>NoDataFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Profitability.aspx.vb">
+      <DependentUpon>Profitability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ProjectActivityRegister.aspx.vb">
+      <DependentUpon>ProjectActivityRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ProjStatus.aspx.vb">
+      <DependentUpon>ProjStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ProjSummary.aspx.vb">
+      <DependentUpon>ProjSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ProjSummaryPopUp.aspx.vb">
+      <DependentUpon>ProjSummaryPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\SessionSet.aspx.vb">
+      <DependentUpon>SessionSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TaskReg.aspx.vb">
+      <DependentUpon>TaskReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TaskRegister_ToDelete.aspx.vb">
+      <DependentUpon>TaskRegister_ToDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TimeAnalysis.aspx.vb">
+      <DependentUpon>TimeAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TimeOff.aspx.vb">
+      <DependentUpon>TimeOff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\TimesheetStatus.aspx.vb">
+      <DependentUpon>TimesheetStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\UserActivityReport.aspx.vb">
+      <DependentUpon>UserActivityReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\UserActivityReportPopUp.aspx.vb">
+      <DependentUpon>UserActivityReportPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StyleTemplate.aspx.vb">
+      <DependentUpon>StyleTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="timeout.aspx.vb">
+      <DependentUpon>timeout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebLogin.aspx.vb">
+      <DependentUpon>WebLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WinLogin.aspx.vb">
+      <DependentUpon>WinLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="Admin\ApprovalTypes.aspx" />
+    <Content Include="Admin\BudgetItems.aspx" />
+    <Content Include="Admin\Clients.aspx" />
+    <Content Include="Admin\Contacts.aspx" />
+    <Content Include="Admin\CostCentres.aspx" />
+    <Content Include="Admin\Countries.aspx" />
+    <Content Include="Admin\Currencies.aspx" />
+    <Content Include="Admin\ExpenseItems.aspx" />
+    <Content Include="Admin\FinancialDocTypeEmail.aspx" />
+    <Content Include="Admin\FinancialDocTypeEmailAdd.aspx" />
+    <Content Include="Admin\FinancialDocTypeEmailDelete.aspx" />
+    <Content Include="Admin\GroupNames.aspx" />
+    <Content Include="Admin\RoleNames.aspx" />
+    <Content Include="Admin\SystemAdmin.aspx" />
+    <Content Include="Admin\TimeOffTypes.aspx" />
+    <Content Include="Admin\Users.aspx" />
+    <Content Include="Approvals\Expense.aspx" />
+    <Content Include="Approvals\FinancialDocument.aspx" />
+    <Content Include="Approvals\PTO.aspx" />
+    <Content Include="Approvals\Timesheet.aspx" />
+    <Content Include="Approvals\VO.aspx" />
+    <Content Include="app_style.css" />
+    <Content Include="Capture\AddProject.aspx" />
+    <Content Include="Capture\AddTask.aspx" />
+    <Content Include="Capture\AddTimeOff.aspx" />
+    <Content Include="Capture\Expense.aspx" />
+    <Content Include="Capture\ExpenseRejected.aspx" />
+    <Content Include="Capture\ExpenseSubmitted.aspx" />
+    <Content Include="Capture\FinancialDocumentRejected.aspx" />
+    <Content Include="Capture\Timesheet.aspx" />
+    <Content Include="Components\Scripts\AddProjects.js" />
+    <Content Include="Components\Scripts\AddResource.js" />
+    <Content Include="Components\Scripts\AddTasks.js" />
+    <Content Include="Components\Scripts\AddTimeOff.js" />
+    <Content Include="Components\Scripts\Admin.js" />
+    <Content Include="Components\Scripts\Approvals.js" />
+    <Content Include="Components\Scripts\common.js" />
+    <Content Include="Components\Scripts\countdown.js" />
+    <Content Include="Components\Scripts\Details.js" />
+    <Content Include="Components\Scripts\DropDownFilter.js" />
+    <Content Include="Components\Scripts\DynamicAdd.js" />
+    <Content Include="Components\Scripts\Expense.js" />
+    <Content Include="Components\Scripts\filterObject.js" />
+    <Content Include="Components\Scripts\IMCalendar.js" />
+    <Content Include="Components\Scripts\IMCoordinate.js" />
+    <Content Include="Components\Scripts\IMTime.js" />
+    <Content Include="Components\Scripts\Orders.js" />
+    <Content Include="Components\Scripts\printer.js" />
+    <Content Include="Components\Scripts\ProjectCloseOut.js" />
+    <Content Include="Components\Scripts\ProjectDocument.js" />
+    <Content Include="Components\Scripts\ProjInfo.js" />
+    <Content Include="Components\Scripts\ReportFilters.js" />
+    <Content Include="Components\Scripts\Reports.js" />
+    <Content Include="Components\Scripts\sortTable.js" />
+    <Content Include="Components\Scripts\TakeOn.js" />
+    <Content Include="Components\Scripts\TimePopup.js" />
+    <Content Include="Components\Scripts\Timesheet.js" />
+    <Content Include="Components\Scripts\uploadObject.js" />
+    <Content Include="Components\Scripts\Users.js" />
+    <Content Include="Components\Scripts\Validation.js" />
+    <Content Include="Components\Scripts\VO.js" />
+    <Content Include="Components\Scripts\webservice.htc" />
+    <Content Include="Components\User Controls\ExpensesReport.ascx" />
+    <Content Include="Components\User Controls\FinancialDocuments.ascx" />
+    <Content Include="Components\User Controls\Footer.ascx" />
+    <Content Include="Components\User Controls\header.ascx" />
+    <Content Include="Components\User Controls\Orders.ascx" />
+    <Content Include="Components\User Controls\ProjectDocuments.ascx" />
+    <Content Include="Components\User Controls\ProjectInfo.ascx" />
+    <Content Include="Components\User Controls\ProjectSummary.ascx" />
+    <Content Include="Components\User Controls\ReportFilters.ascx" />
+    <Content Include="Components\User Controls\Selections.ascx" />
+    <Content Include="Components\User Controls\TopTabs.ascx" />
+    <Content Include="Components\XSL\Rep_Default.xsl" />
+    <Content Include="default.aspx" />
+    <Content Include="Details\ClientDetails.aspx" />
+    <Content Include="Details\ContactDetails.aspx" />
+    <Content Include="dynAdd.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Help\Links.aspx" />
+    <Content Include="HTMLPage1.htm" />
+    <Content Include="Images\add.gif" />
+    <Content Include="Images\addold.gif" />
+    <Content Include="Images\alerts.gif" />
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Images\blank.gif" />
+    <Content Include="Images\CALENDAR.GIF" />
+    <Content Include="Images\collapse.gif" />
+    <Content Include="Images\constants.gif" />
+    <Content Include="Images\delete.gif" />
+    <Content Include="Images\down.gif" />
+    <Content Include="Images\downold.gif" />
+    <Content Include="Images\expand.gif" />
+    <Content Include="Images\expandA.gif" />
+    <Content Include="Images\expense_approval.gif" />
+    <Content Include="Images\expense_app_big.gif" />
+    <Content Include="Images\expense_overdue.gif" />
+    <Content Include="Images\expense_rejected.gif" />
+    <Content Include="Images\heading.gif" />
+    <Content Include="Images\jscript-ie5.gif" />
+    <Content Include="Images\leftendtab.gif" />
+    <Content Include="Images\logout.gif" />
+    <Content Include="Images\MenuImages\alerts.gif" />
+    <Content Include="Images\MenuImages\button.gif" />
+    <Content Include="Images\MenuImages\competencies.gif" />
+    <Content Include="Images\MenuImages\constants.gif" />
+    <Content Include="Images\MenuImages\EditCopy1.gif" />
+    <Content Include="Images\MenuImages\EditCopy2.gif" />
+    <Content Include="Images\MenuImages\EditCut1.gif" />
+    <Content Include="Images\MenuImages\EditCut2.gif" />
+    <Content Include="Images\MenuImages\EditDelete1.gif" />
+    <Content Include="Images\MenuImages\EditDelete2.gif" />
+    <Content Include="Images\MenuImages\EditPaste1.gif" />
+    <Content Include="Images\MenuImages\EditPaste2.gif" />
+    <Content Include="Images\MenuImages\expand.gif" />
+    <Content Include="Images\MenuImages\expense_overdue.gif" />
+    <Content Include="Images\MenuImages\legal.gif" />
+    <Content Include="Images\MenuImages\legal1.gif" />
+    <Content Include="Images\MenuImages\logout.gif" />
+    <Content Include="Images\MenuImages\projectadmin.gif" />
+    <Content Include="Images\MenuImages\reports.gif" />
+    <Content Include="Images\MenuImages\time_overdue.gif" />
+    <Content Include="Images\MenuImages\XPmenu_spacer.gif" />
+    <Content Include="Images\MenuImages\XPmenu_submenu.gif" />
+    <Content Include="Images\preview.gif" />
+    <Content Include="Images\print.gif" />
+    <Content Include="Images\projectadmin.gif" />
+    <Content Include="Images\reports.gif" />
+    <Content Include="Images\rightendtab.gif" />
+    <Content Include="Images\save.gif" />
+    <Content Include="Images\start.gif" />
+    <Content Include="Images\stop.gif" />
+    <Content Include="Images\tabnotselected.gif" />
+    <Content Include="Images\tabselected.gif" />
+    <Content Include="Images\time_approval.gif" />
+    <Content Include="Images\time_overdue.gif" />
+    <Content Include="Images\time_rejected.gif" />
+    <Content Include="Images\trigger_leftendtab.gif" />
+    <Content Include="Images\trigger_rightendtab.gif" />
+    <Content Include="Images\up.gif" />
+    <Content Include="Images\upold.gif" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="Project\AddClient.aspx" />
+    <Content Include="Project\AddContact.aspx" />
+    <Content Include="Project\AddResource.aspx" />
+    <Content Include="Project\ChangeTeamleader.aspx" />
+    <Content Include="Project\CloseOut.aspx" />
+    <Content Include="Project\Default.aspx" />
+    <Content Include="Project\MyProjects.aspx" />
+    <Content Include="Project\OrderInfo.aspx" />
+    <Content Include="Project\ProjectCloseOut.aspx" />
+    <Content Include="Project\ProjectInfo.aspx" />
+    <Content Include="Project\ProjectListing.aspx" />
+    <Content Include="Project\ProjectTakeOn.aspx" />
+    <Content Include="Project\ProjectVO.aspx" />
+    <Content Include="Project\SelectProject.aspx" />
+    <Content Include="Project\UpdateResource.aspx" />
+    <Content Include="Project\Upload.aspx" />
+    <Content Include="Project\UploadFinancialDoc.aspx" />
+    <Content Include="Project\ViewFinancialDocument.aspx" />
+    <Content Include="Redirect401.htm" />
+    <Content Include="Reports\DataExtract.aspx" />
+    <Content Include="Reports\Default.aspx" />
+    <Content Include="Reports\Exceptions.aspx" />
+    <Content Include="Reports\ExpenseReimbursements.aspx" />
+    <Content Include="Reports\Expenses.aspx" />
+    <Content Include="Reports\NoDataFound.aspx" />
+    <Content Include="Reports\Profitability.aspx" />
+    <Content Include="Reports\ProjectActivityRegister.aspx" />
+    <Content Include="Reports\ProjStatus.aspx" />
+    <Content Include="Reports\ProjSummary.aspx" />
+    <Content Include="Reports\ProjSummaryPopUp.aspx" />
+    <Content Include="Reports\SessionSet.aspx" />
+    <Content Include="Reports\TaskReg.aspx" />
+    <Content Include="Reports\TaskRegister_ToDelete.aspx" />
+    <Content Include="Reports\TimeAnalysis.aspx" />
+    <Content Include="Reports\TimeOff.aspx" />
+    <Content Include="Reports\TimesheetStatus.aspx" />
+    <Content Include="Reports\UserActivityReport.aspx" />
+    <Content Include="Reports\UserActivityReportPopUp.aspx" />
+    <Content Include="Start.htm" />
+    <Content Include="StyleTemplate.aspx" />
+    <Content Include="timeout.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebLogin.aspx" />
+    <Content Include="WinLogin.aspx" />
+    <Content Include="XPmenu_style.css" />
+    <EmbeddedResource Include="Admin\ApprovalTypes.aspx.resx">
+      <DependentUpon>ApprovalTypes.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\BudgetItems.aspx.resx">
+      <DependentUpon>BudgetItems.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Clients.aspx.resx">
+      <DependentUpon>Clients.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Contacts.aspx.resx">
+      <DependentUpon>Contacts.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\CostCentres.aspx.resx">
+      <DependentUpon>CostCentres.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Countries.aspx.resx">
+      <DependentUpon>Countries.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Currencies.aspx.resx">
+      <DependentUpon>Currencies.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ExpenseItems.aspx.resx">
+      <DependentUpon>ExpenseItems.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FinancialDocTypeEmail.aspx.resx">
+      <DependentUpon>FinancialDocTypeEmail.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FinancialDocTypeEmailAdd.aspx.resx">
+      <DependentUpon>FinancialDocTypeEmailAdd.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FinancialDocTypeEmailDelete.aspx.resx">
+      <DependentUpon>FinancialDocTypeEmailDelete.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GroupNames.aspx.resx">
+      <DependentUpon>GroupNames.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\RoleNames.aspx.resx">
+      <DependentUpon>RoleNames.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SystemAdmin.aspx.resx">
+      <DependentUpon>SystemAdmin.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\TimeOffTypes.aspx.resx">
+      <DependentUpon>TimeOffTypes.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Users.aspx.resx">
+      <DependentUpon>Users.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approvals\Expense.aspx.resx">
+      <DependentUpon>Expense.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approvals\FinancialDocument.aspx.resx">
+      <DependentUpon>FinancialDocument.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approvals\PTO.aspx.resx">
+      <DependentUpon>PTO.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approvals\Timesheet.aspx.resx">
+      <DependentUpon>Timesheet.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approvals\VO.aspx.resx">
+      <DependentUpon>VO.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capture\AddProject.aspx.resx">
+      <DependentUpon>AddProject.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capture\AddTask.aspx.resx">
+      <DependentUpon>AddTask.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capture\AddTimeOff.aspx.resx">
+      <DependentUpon>AddTimeOff.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capture\Expense.aspx.resx">
+      <DependentUpon>Expense.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capture\ExpenseRejected.aspx.resx">
+      <DependentUpon>ExpenseRejected.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capture\ExpenseSubmitted.aspx.resx">
+      <DependentUpon>ExpenseSubmitted.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capture\FinancialDocumentRejected.aspx.resx">
+      <DependentUpon>FinancialDocumentRejected.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capture\Timesheet.aspx.resx">
+      <DependentUpon>Timesheet.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\ExpensesReport.ascx.resx">
+      <DependentUpon>ExpensesReport.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\FinancialDocuments.ascx.resx">
+      <DependentUpon>FinancialDocuments.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\Footer.ascx.resx">
+      <DependentUpon>Footer.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\header.ascx.resx">
+      <DependentUpon>header.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\Orders.ascx.resx">
+      <DependentUpon>Orders.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\ProjectDocuments.ascx.resx">
+      <DependentUpon>ProjectDocuments.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\ProjectInfo.ascx.resx">
+      <DependentUpon>ProjectInfo.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\ProjectSummary.ascx.resx">
+      <DependentUpon>ProjectSummary.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\ReportFilters.ascx.resx">
+      <DependentUpon>ReportFilters.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\Selections.ascx.resx">
+      <DependentUpon>Selections.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\User Controls\TopTabs.ascx.resx">
+      <DependentUpon>TopTabs.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.aspx.resx">
+      <DependentUpon>default.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\ClientDetails.aspx.resx">
+      <DependentUpon>ClientDetails.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\ContactDetails.aspx.resx">
+      <DependentUpon>ContactDetails.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dynAdd.aspx.resx">
+      <DependentUpon>dynAdd.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\Links.aspx.resx">
+      <DependentUpon>Links.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogOut.aspx.resx">
+      <DependentUpon>LogOut.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\AddClient.aspx.resx">
+      <DependentUpon>AddClient.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\AddContact.aspx.resx">
+      <DependentUpon>AddContact.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\AddResource.aspx.resx">
+      <DependentUpon>AddResource.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ChangeTeamleader.aspx.resx">
+      <DependentUpon>ChangeTeamleader.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\CloseOut.aspx.resx">
+      <DependentUpon>CloseOut.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Default.aspx.resx">
+      <DependentUpon>Default.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\MyProjects.aspx.resx">
+      <DependentUpon>MyProjects.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\OrderInfo.aspx.resx">
+      <DependentUpon>OrderInfo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ProjectCloseOut.aspx.resx">
+      <DependentUpon>ProjectCloseOut.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ProjectInfo.aspx.resx">
+      <DependentUpon>ProjectInfo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ProjectListing.aspx.resx">
+      <DependentUpon>ProjectListing.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ProjectTakeOn.aspx.resx">
+      <DependentUpon>ProjectTakeOn.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ProjectVO.aspx.resx">
+      <DependentUpon>ProjectVO.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\SelectProject.aspx.resx">
+      <DependentUpon>SelectProject.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\UpdateResource.aspx.resx">
+      <DependentUpon>UpdateResource.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Upload.aspx.resx">
+      <DependentUpon>Upload.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\UploadFinancialDoc.aspx.resx">
+      <DependentUpon>UploadFinancialDoc.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ViewFinancialDocument.aspx.resx">
+      <DependentUpon>ViewFinancialDocument.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DataExtract.aspx.resx">
+      <DependentUpon>DataExtract.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Default.aspx.resx">
+      <DependentUpon>Default.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Exceptions.aspx.resx">
+      <DependentUpon>Exceptions.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ExpenseReimbursements.aspx.resx">
+      <DependentUpon>ExpenseReimbursements.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Expenses.aspx.resx">
+      <DependentUpon>Expenses.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NoDataFound.aspx.resx">
+      <DependentUpon>NoDataFound.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Profitability.aspx.resx">
+      <DependentUpon>Profitability.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProjectActivityRegister.aspx.resx">
+      <DependentUpon>ProjectActivityRegister.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProjStatus.aspx.resx">
+      <DependentUpon>ProjStatus.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProjSummary.aspx.resx">
+      <DependentUpon>ProjSummary.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProjSummaryPopUp.aspx.resx">
+      <DependentUpon>ProjSummaryPopUp.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SessionSet.aspx.resx">
+      <DependentUpon>SessionSet.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TaskReg.aspx.resx">
+      <DependentUpon>TaskReg.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TaskRegister_ToDelete.aspx.resx">
+      <DependentUpon>TaskRegister_ToDelete.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TimeAnalysis.aspx.resx">
+      <DependentUpon>TimeAnalysis.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TimeOff.aspx.resx">
+      <DependentUpon>TimeOff.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TimesheetStatus.aspx.resx">
+      <DependentUpon>TimesheetStatus.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserActivityReport.aspx.resx">
+      <DependentUpon>UserActivityReport.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserActivityReportPopUp.aspx.resx">
+      <DependentUpon>UserActivityReportPopUp.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StyleTemplate.aspx.resx">
+      <DependentUpon>StyleTemplate.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timeout.aspx.resx">
+      <DependentUpon>timeout.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebLogin.aspx.resx">
+      <DependentUpon>WebLogin.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinLogin.aspx.resx">
+      <DependentUpon>WinLogin.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Help\Userguide.doc" />
+    <None Include="Images\MenuImages\Thumbs.db" />
+    <None Include="Images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\Java\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v16.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63670</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/TimeTrax</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

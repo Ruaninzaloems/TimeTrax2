@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<DOCUMENT>
+  <User UserID="1" UserName="Vince Friday" />
+  <User UserID="2" UserName="Evani Govender" />
+  <User UserID="3" UserName="Andrew De Klerk" />
+  <User UserID="4" UserName="Ross Lewin" />
+  <User UserID="5" UserName="Greg De Laborde" />
+  <User UserID="6" UserName="Annesh Singh" />
+  <User UserID="7" UserName="Shane McCarthy" />
+  <User UserID="8" UserName="Justin Wilkins" />
+  <User UserID="9" UserName="Angela Ferguson" />
+  <User UserID="10" UserName="Paul Storry" />
+  <User UserID="11" UserName="Warren Harvey" />
+  <User UserID="12" UserName="Peter Human" />
+  <User UserID="13" UserName="Craig Perrit" />
+  <User UserID="14" UserName="Craig Saunders" />
+  <User UserID="15" UserName="Diana Lewin" />
+  <User UserID="16" UserName="Helen Ferreira" />
+  <User UserID="17" UserName="Nadine Smith" />
+  <User UserID="18" UserName="Lani Lombaard" />
+  <User UserID="19" UserName="Nedika Mungal" />
+  <User UserID="20" UserName="Shaun Anderson" />
+  <User UserID="21" UserName="Ria Wheeler" />
+  <User UserID="22" UserName="Linda McKenzie" />
+  <User UserID="23" UserName="Suzaan Oltmann" />
+  <User UserID="24" UserName="Happiness Hlongwana" />
+  <User UserID="25" UserName="Mbalenhle Buthelezi" />
+  <User UserID="26" UserName="Sarah Beveridge" />
+  <User UserID="27" UserName="Nkululeko Luthuli" />
+  <User UserID="28" UserName="Ellie Eburne" />
+  <User UserID="29" UserName="Mike Brice" />
+  <User UserID="30" UserName="Thabani Dube" />
+  <Client ClientID="20" ClientName="Johannesburg Water" />
+  <Client ClientID="21" ClientName="Greater Sekhukhune District Municipality">
+    <Project ClientID="21" ProjectID="166" ProjectName="Sekhukhune DIMS">
+      <Task ClientID="21" ProjectID="166" TaskID="330" TaskName="Phase I Readiness Assessment" />
+    </Project>
+  </Client>
+  <Client ClientID="22" ClientName="Brisbane City Enterprises">
+    <Project ClientID="22" ProjectID="165" ProjectName="OBBT Enhancement">
+      <Task ClientID="22" ProjectID="165" TaskID="327" TaskName="URS &amp; FS" />
+      <Task ClientID="22" ProjectID="165" TaskID="328" TaskName="Development" />
+      <Task ClientID="22" ProjectID="165" TaskID="329" TaskName="Project Management" />
+    </Project>
+  </Client>
+  <Client ClientID="23" ClientName="Eyethu">
+    <Project ClientID="23" ProjectID="147" ProjectName="Eyethu PC Support">
+      <Task ClientID="23" ProjectID="147" TaskID="285" TaskName="Network" />
+      <Task ClientID="23" ProjectID="147" TaskID="286" TaskName="Terminal Server" />
+    </Project>
+  </Client>
+  <Client ClientID="24" ClientName="Sappi Forest Products">
+    <Project ClientID="24" ProjectID="140" ProjectName="Seed &amp; Breeding Registes Redevelop.">
+      <Task ClientID="24" ProjectID="140" TaskID="263" TaskName="Project Management" />
+      <Task ClientID="24" ProjectID="140" TaskID="264" TaskName="Design" />
+      <Task ClientID="24" ProjectID="140" TaskID="265" TaskName="Coding" />
+    </Project>
+    <Project ClientID="24" ProjectID="141" ProjectName="Sappi Project Management">
+      <Task ClientID="24" ProjectID="141" TaskID="266" TaskName="Project Management" />
+      <Task ClientID="24" ProjectID="141" TaskID="267" TaskName="Design" />
+      <Task ClientID="24" ProjectID="141" TaskID="268" TaskName="Coding" />
+    </Project>
+    <Project ClientID="24" ProjectID="142" ProjectName="ECOS">
+      <Task ClientID="24" ProjectID="142" TaskID="269" TaskName="Modifications" />
+    </Project>
+  </Client>
+  <Client ClientID="25" ClientName="Udidi Development Consultants" />
+  <Client ClientID="26" ClientName="ABSA" />
+  <Client ClientID="27" ClientName="Peter Jewell Consulting Services">
+    <Project ClientID="27" ProjectID="156" ProjectName="PJ GIS Services">
+      <Task ClientID="27" ProjectID="156" TaskID="303" TaskName="PJ GIS Services" />
+    </Project>
+    <Project ClientID="27" ProjectID="157" ProjectName="Masinga LUMS">
+      <Task ClientID="27" ProjectID="157" TaskID="304" TaskName="Masinga LUMS" />
+    </Project>
+    <Project ClientID="27" ProjectID="158" ProjectName="Ingwe LUMS">
+      <Task ClientID="27" ProjectID="158" TaskID="305" TaskName="Ingwe LUMS" />
+    </Project>
+  </Client>
+  <Client ClientID="28" ClientName="Red Earth cc">
+    <Project ClientID="28" ProjectID="159" ProjectName="Red Earth GIS">
+      <Task ClientID="28" ProjectID="159" TaskID="306" TaskName="Red Earth GIS Services" />
+    </Project>
+  </Client>
+  <Client ClientID="29" ClientName="EMPOWRrisk">
+    <Project ClientID="29" ProjectID="160" ProjectName="Empowerisk Website">
+      <Task ClientID="29" ProjectID="160" TaskID="307" TaskName="Design and Devlopment" />
+    </Project>
+  </Client>
+  <Client ClientID="30" ClientName="3G Networks" />
+  <Client ClientID="31" ClientName="KZN DAEA" />
+  <Client ClientID="32" ClientName="Stemele Bosch Africa" />
+  <Client ClientID="33" ClientName="Vodacom">
+    <Project ClientID="33" ProjectID="145" ProjectName="DRP Server Setup">
+      <Task ClientID="33" ProjectID="145" TaskID="279" TaskName="DRP Server" />
+    </Project>
+    <Project ClientID="33" ProjectID="146" ProjectName="Vodamap Module Enhancements">
+      <Task ClientID="33" ProjectID="146" TaskID="280" TaskName="Census Data" />
+      <Task ClientID="33" ProjectID="146" TaskID="281" TaskName="Regional Boundaries" />
+      <Task ClientID="33" ProjectID="146" TaskID="282" TaskName="LCS Operations and Commserv Tools" />
+      <Task ClientID="33" ProjectID="146" TaskID="283" TaskName="LCS Commsev Planning Tools" />
+      <Task ClientID="33" ProjectID="146" TaskID="284" TaskName="LCS Regulatory Affairs Tools" />
+    </Project>
+  </Client>
+  <Client ClientID="34" ClientName="MICROmega Holdings (Pty) Ltd">
+    <Project ClientID="34" ProjectID="148" ProjectName="MMG Website">
+      <Task ClientID="34" ProjectID="148" TaskID="287" TaskName="Design" />
+      <Task ClientID="34" ProjectID="148" TaskID="288" TaskName="Development" />
+      <Task ClientID="34" ProjectID="148" TaskID="289" TaskName="Launch" />
+    </Project>
+    <Project ClientID="34" ProjectID="149" ProjectName="MMRMS Meter Reading">
+      <Task ClientID="34" ProjectID="149" TaskID="290" TaskName="Process Review" />
+    </Project>
+    <Project ClientID="34" ProjectID="150" ProjectName="Sebata">
+      <Task ClientID="34" ProjectID="150" TaskID="291" TaskName="Management Support" />
+    </Project>
+    <Project ClientID="34" ProjectID="151" ProjectName="MMRMS Meter Man">
+      <Task ClientID="34" ProjectID="151" TaskID="292" TaskName="Process Review" />
+    </Project>
+  </Client>
+  <Client ClientID="35" ClientName="Intermap SA">
+    <Project ClientID="35" ProjectID="94" ProjectName="Intermap Admin">
+      <Task ClientID="35" ProjectID="94" TaskID="140" TaskName="Admin" />
+    </Project>
+    <Project ClientID="35" ProjectID="95" ProjectName="Intermap Training">
+      <Task ClientID="35" ProjectID="95" TaskID="141" TaskName="Internal Training" />
+      <Task ClientID="35" ProjectID="95" TaskID="142" TaskName="External Training" />
+    </Project>
+    <Project ClientID="35" ProjectID="96" ProjectName="Intermap GIS Data">
+      <Task ClientID="35" ProjectID="96" TaskID="143" TaskName="GIS Data Maint." />
+    </Project>
+    <Project ClientID="35" ProjectID="97" ProjectName="Programme Management">
+      <Task ClientID="35" ProjectID="97" TaskID="144" TaskName="Planning &amp; Stds" />
+      <Task ClientID="35" ProjectID="97" TaskID="145" TaskName="Management" />
+    </Project>
+    <Project ClientID="35" ProjectID="98" ProjectName="Intermap Customer Care">
+      <Task ClientID="35" ProjectID="98" TaskID="146" TaskName="Site Checks" />
+      <Task ClientID="35" ProjectID="98" TaskID="147" TaskName="Support Call" />
+      <Task ClientID="35" ProjectID="98" TaskID="148" TaskName="Monthly Reporting" />
+      <Task ClientID="35" ProjectID="98" TaskID="149" TaskName="Call Centre Est" />
+      <Task ClientID="35" ProjectID="98" TaskID="150" TaskName="Issue Manager Dev" />
+      <Task ClientID="35" ProjectID="98" TaskID="151" TaskName="Customer Care Dev" />
+    </Project>
+  </Client>
+  <Client ClientID="36" ClientName="Uthukela District Municipality" />
+  <Client ClientID="37" ClientName="Nkandla Municipality">
+    <Project ClientID="37" ProjectID="153" ProjectName="Nkandla GIS Support">
+      <Task ClientID="37" ProjectID="153" TaskID="297" TaskName="Hardware &amp; Software Set-up" />
+      <Task ClientID="37" ProjectID="153" TaskID="298" TaskName="Website Design" />
+      <Task ClientID="37" ProjectID="153" TaskID="299" TaskName="WebGIS" />
+      <Task ClientID="37" ProjectID="153" TaskID="300" TaskName="Training" />
+    </Project>
+  </Client>
+  <Client ClientID="38" ClientName="AbaQulusi Local Municipality">
+    <Project ClientID="38" ProjectID="136" ProjectName="GIS Services Abaqulusi">
+      <Task ClientID="38" ProjectID="136" TaskID="243" TaskName="Proposal" />
+      <Task ClientID="38" ProjectID="136" TaskID="244" TaskName="GIS Marketing" />
+      <Task ClientID="38" ProjectID="136" TaskID="245" TaskName="Project Management" />
+      <Task ClientID="38" ProjectID="136" TaskID="246" TaskName="Consumer Database Update" />
+      <Task ClientID="38" ProjectID="136" TaskID="247" TaskName="Systems: Set up Website" />
+      <Task ClientID="38" ProjectID="136" TaskID="248" TaskName="Data: Centralise &amp; Restructure" />
+      <Task ClientID="38" ProjectID="136" TaskID="249" TaskName="Data: Formalise &amp; update Cadastral" />
+      <Task ClientID="38" ProjectID="136" TaskID="250" TaskName="Data: Link GIS &amp; Valroll" />
+      <Task ClientID="38" ProjectID="136" TaskID="251" TaskName="Data: Continue capture of Services" />
+      <Task ClientID="38" ProjectID="136" TaskID="252" TaskName="Data: Capture Land Use" />
+      <Task ClientID="38" ProjectID="136" TaskID="253" TaskName="Data: Update and convert zoning to GIS" />
+      <Task ClientID="38" ProjectID="136" TaskID="254" TaskName="Data: Capture Water &amp; Elecricity Meters" />
+    </Project>
+  </Client>
+  <Client ClientID="43" ClientName="VGC Engineers">
+    <Project ClientID="43" ProjectID="124" ProjectName="WSDP Phase III">
+      <Task ClientID="43" ProjectID="124" TaskID="209" TaskName="Data Updates" />
+      <Task ClientID="43" ProjectID="124" TaskID="210" TaskName="Prioritisation" />
+      <Task ClientID="43" ProjectID="124" TaskID="211" TaskName="DIMS Data" />
+      <Task ClientID="43" ProjectID="124" TaskID="212" TaskName="U-View Update" />
+    </Project>
+  </Client>
+  <Client ClientID="44" ClientName="Zululand District Municipality">
+    <Project ClientID="44" ProjectID="125" ProjectName="WSA Support ZDM">
+      <Task ClientID="44" ProjectID="125" TaskID="213" TaskName="WSA Support ZDM" />
+    </Project>
+    <Project ClientID="44" ProjectID="126" ProjectName="ZDM GIS Services">
+      <Task ClientID="44" ProjectID="126" TaskID="214" TaskName="GIS Support" />
+      <Task ClientID="44" ProjectID="126" TaskID="215" TaskName="GIS Support" />
+      <Task ClientID="44" ProjectID="126" TaskID="216" TaskName="Hardware &amp; Software Support" />
+      <Task ClientID="44" ProjectID="126" TaskID="217" TaskName="Management Support" />
+      <Task ClientID="44" ProjectID="126" TaskID="218" TaskName="eDumbe LUMS" />
+      <Task ClientID="44" ProjectID="126" TaskID="219" TaskName="Abaqulusi LUMS" />
+      <Task ClientID="44" ProjectID="126" TaskID="220" TaskName="Eskom" />
+      <Task ClientID="44" ProjectID="126" TaskID="221" TaskName="CPTR Data Capture" />
+    </Project>
+    <Project ClientID="44" ProjectID="127" ProjectName="IMPI 1.1">
+      <Task ClientID="44" ProjectID="127" TaskID="222" TaskName="Finance" />
+      <Task ClientID="44" ProjectID="127" TaskID="223" TaskName="Users" />
+      <Task ClientID="44" ProjectID="127" TaskID="224" TaskName="Project" />
+      <Task ClientID="44" ProjectID="127" TaskID="225" TaskName="Training" />
+      <Task ClientID="44" ProjectID="127" TaskID="226" TaskName="Data Verification" />
+    </Project>
+    <Project ClientID="44" ProjectID="128" ProjectName="Siza Customer Care">
+      <Task ClientID="44" ProjectID="128" TaskID="227" TaskName="URS" />
+      <Task ClientID="44" ProjectID="128" TaskID="228" TaskName="Application Development" />
+      <Task ClientID="44" ProjectID="128" TaskID="229" TaskName="Testing" />
+      <Task ClientID="44" ProjectID="128" TaskID="230" TaskName="Training &amp; Support" />
+    </Project>
+    <Project ClientID="44" ProjectID="129" ProjectName="ZDM 78">
+      <Task ClientID="44" ProjectID="129" TaskID="231" TaskName="Data Capture" />
+      <Task ClientID="44" ProjectID="129" TaskID="232" TaskName="Database Development" />
+      <Task ClientID="44" ProjectID="129" TaskID="233" TaskName="Data manipulation &amp; Reporting" />
+      <Task ClientID="44" ProjectID="129" TaskID="234" TaskName="Project Management" />
+    </Project>
+    <Project ClientID="44" ProjectID="130" ProjectName="ZDM Monthly Reporting">
+      <Task ClientID="44" ProjectID="130" TaskID="235" TaskName="Specification" />
+      <Task ClientID="44" ProjectID="130" TaskID="236" TaskName="Development" />
+      <Task ClientID="44" ProjectID="130" TaskID="237" TaskName="Project Management" />
+    </Project>
+    <Project ClientID="44" ProjectID="131" ProjectName="WSDP Phase III">
+      <Task ClientID="44" ProjectID="131" TaskID="238" TaskName="GIS mapping Requirements" />
+    </Project>
+    <Project ClientID="44" ProjectID="132" ProjectName="ZDM Rudimentary Water">
+      <Task ClientID="44" ProjectID="132" TaskID="239" TaskName="Rudimentary Water Mapping" />
+    </Project>
+  </Client>
+  <Client ClientID="45" ClientName="Ernest Cloete &amp; Associates">
+    <Project ClientID="45" ProjectID="133" ProjectName="Dlamini&amp;Sibiya">
+      <Task ClientID="45" ProjectID="133" TaskID="240" TaskName="GIS Services" />
+    </Project>
+    <Project ClientID="45" ProjectID="134" ProjectName="Zondo Business Plan">
+      <Task ClientID="45" ProjectID="134" TaskID="241" TaskName="GIS Services" />
+    </Project>
+    <Project ClientID="45" ProjectID="135" ProjectName="Frischgewaagd BP">
+      <Task ClientID="45" ProjectID="135" TaskID="242" TaskName="GIS Services" />
+    </Project>
+  </Client>
+  <Client ClientID="47" ClientName="MICROmega KZN" />
+  <Client ClientID="48" ClientName="IMASP">
+    <Project ClientID="48" ProjectID="99" ProjectName="IMASP">
+      <Task ClientID="48" ProjectID="99" TaskID="152" TaskName="IMASP Admin" />
+      <Task ClientID="48" ProjectID="99" TaskID="153" TaskName="R&amp;D" />
+      <Task ClientID="48" ProjectID="99" TaskID="154" TaskName="IM Customer care Application" />
+    </Project>
+    <Project ClientID="48" ProjectID="100" ProjectName="UDM Support">
+      <Task ClientID="48" ProjectID="100" TaskID="155" TaskName="UDm Website Support" />
+    </Project>
+    <Project ClientID="48" ProjectID="101" ProjectName="Internet Services ZDM">
+      <Task ClientID="48" ProjectID="101" TaskID="156" TaskName="ZDM Internet Hosting" />
+    </Project>
+    <Project ClientID="48" ProjectID="102" ProjectName="Hosting IMPI">
+      <Task ClientID="48" ProjectID="102" TaskID="157" TaskName="IMPI 1.1" />
+    </Project>
+    <Project ClientID="48" ProjectID="103" ProjectName="AUSSA Support">
+      <Task ClientID="48" ProjectID="103" TaskID="158" TaskName="Support &amp; Maintenance" />
+    </Project>
+    <Project ClientID="48" ProjectID="105" ProjectName="Internet Services Nkandla">
+      <Task ClientID="48" ProjectID="105" TaskID="161" TaskName="Hosting Nkandla" />
+    </Project>
+    <Project ClientID="48" ProjectID="106" ProjectName="Wastemap 2004/05">
+      <Task ClientID="48" ProjectID="106" TaskID="162" TaskName="Hosting &amp; Support" />
+    </Project>
+    <Project ClientID="48" ProjectID="107" ProjectName="Hosting Agtrack 04/05">
+      <Task ClientID="48" ProjectID="107" TaskID="163" TaskName="Agtrack Support &amp; Customer Care" />
+    </Project>
+    <Project ClientID="48" ProjectID="108" ProjectName="MMG Customer Care">
+      <Task ClientID="48" ProjectID="108" TaskID="164" TaskName="Support Services" />
+    </Project>
+    <Project ClientID="48" ProjectID="109" ProjectName="UDM DIMS Support">
+      <Task ClientID="48" ProjectID="109" TaskID="165" TaskName="Support" />
+      <Task ClientID="48" ProjectID="109" TaskID="166" TaskName="Training" />
+    </Project>
+    <Project ClientID="48" ProjectID="110" ProjectName="UDM Issue Manager Support 04/05">
+      <Task ClientID="48" ProjectID="110" TaskID="167" TaskName="Support" />
+      <Task ClientID="48" ProjectID="110" TaskID="168" TaskName="SMS Alerts" />
+    </Project>
+    <Project ClientID="48" ProjectID="111" ProjectName="Vodamap Support &amp; Maintenance">
+      <Task ClientID="48" ProjectID="111" TaskID="169" TaskName="Vodamap Support" />
+      <Task ClientID="48" ProjectID="111" TaskID="170" TaskName="Vodamap New Development" />
+      <Task ClientID="48" ProjectID="111" TaskID="171" TaskName="Vodamap Routine Maintenance" />
+    </Project>
+    <Project ClientID="48" ProjectID="112" ProjectName="Hosting Amathole DIMS">
+      <Task ClientID="48" ProjectID="112" TaskID="172" TaskName="Support" />
+      <Task ClientID="48" ProjectID="112" TaskID="173" TaskName="Development" />
+    </Project>
+    <Project ClientID="48" ProjectID="113" ProjectName="eGLC Support">
+      <Task ClientID="48" ProjectID="113" TaskID="174" TaskName="Support" />
+    </Project>
+    <Project ClientID="48" ProjectID="114" ProjectName="NAC Monthly Support">
+      <Task ClientID="48" ProjectID="114" TaskID="175" TaskName="Monthly Support" />
+    </Project>
+    <Project ClientID="48" ProjectID="115" ProjectName="NAC Internet Services">
+      <Task ClientID="48" ProjectID="115" TaskID="176" TaskName="Internet Services" />
+    </Project>
+    <Project ClientID="48" ProjectID="116" ProjectName="Empowerisk SLA">
+      <Task ClientID="48" ProjectID="116" TaskID="177" TaskName="Support Services" />
+    </Project>
+  </Client>
+  <Client ClientID="49" ClientName="DLV Vryheid" />
+  <Client ClientID="50" ClientName="Lead Services CC">
+    <Project ClientID="50" ProjectID="104" ProjectName="Network Setup">
+      <Task ClientID="50" ProjectID="104" TaskID="159" TaskName="Network Setup" />
+      <Task ClientID="50" ProjectID="104" TaskID="160" TaskName="Computer Setup" />
+    </Project>
+  </Client>
+  <Client ClientID="51" ClientName="Intermap Business Development">
+    <Project ClientID="51" ProjectID="117" ProjectName="Business Development">
+      <Task ClientID="51" ProjectID="117" TaskID="178" TaskName="Adhoc Proposals" />
+      <Task ClientID="51" ProjectID="117" TaskID="179" TaskName="Marketing" />
+      <Task ClientID="51" ProjectID="117" TaskID="180" TaskName="Australia" />
+      <Task ClientID="51" ProjectID="117" TaskID="181" TaskName="Mountain Bike site" />
+      <Task ClientID="51" ProjectID="117" TaskID="182" TaskName="uMhlatuze Performance Management" />
+      <Task ClientID="51" ProjectID="117" TaskID="183" TaskName="ZDM DIMS" />
+    </Project>
+    <Project ClientID="51" ProjectID="118" ProjectName="Timetrax">
+      <Task ClientID="51" ProjectID="118" TaskID="184" TaskName="Database Design" />
+      <Task ClientID="51" ProjectID="118" TaskID="185" TaskName="Application Development" />
+      <Task ClientID="51" ProjectID="118" TaskID="186" TaskName="Reports Development" />
+      <Task ClientID="51" ProjectID="118" TaskID="187" TaskName="Graphic User Interface" />
+      <Task ClientID="51" ProjectID="118" TaskID="188" TaskName="Offline Capture Development" />
+      <Task ClientID="51" ProjectID="118" TaskID="189" TaskName="Testing and Debugging" />
+    </Project>
+    <Project ClientID="51" ProjectID="119" ProjectName="BEE Rating">
+      <Task ClientID="51" ProjectID="119" TaskID="190" TaskName="URS Storyboard" />
+      <Task ClientID="51" ProjectID="119" TaskID="191" TaskName="Consulting Services" />
+    </Project>
+  </Client>
+  <Client ClientID="52" ClientName="Uthungulu District Municipality">
+    <Project ClientID="52" ProjectID="120" ProjectName="GIS Services">
+      <Task ClientID="52" ProjectID="120" TaskID="192" TaskName="Data Management" />
+      <Task ClientID="52" ProjectID="120" TaskID="193" TaskName="GIS Support" />
+      <Task ClientID="52" ProjectID="120" TaskID="194" TaskName="GIS Services" />
+      <Task ClientID="52" ProjectID="120" TaskID="195" TaskName="Issue Manager Spatial Upgrade" />
+    </Project>
+    <Project ClientID="52" ProjectID="121" ProjectName="LGHBP 2003/04">
+      <Task ClientID="52" ProjectID="121" TaskID="196" TaskName="Training" />
+      <Task ClientID="52" ProjectID="121" TaskID="197" TaskName="Internet Development" />
+      <Task ClientID="52" ProjectID="121" TaskID="198" TaskName="Hardware Support" />
+      <Task ClientID="52" ProjectID="121" TaskID="199" TaskName="Professional Fees" />
+      <Task ClientID="52" ProjectID="121" TaskID="200" TaskName="Website transfer" />
+    </Project>
+    <Project ClientID="52" ProjectID="122" ProjectName="DIMS 2.X">
+      <Task ClientID="52" ProjectID="122" TaskID="201" TaskName="URS" />
+      <Task ClientID="52" ProjectID="122" TaskID="202" TaskName="Specification" />
+      <Task ClientID="52" ProjectID="122" TaskID="203" TaskName="Development" />
+      <Task ClientID="52" ProjectID="122" TaskID="204" TaskName="Deployment &amp; Facilitation" />
+      <Task ClientID="52" ProjectID="122" TaskID="205" TaskName="Training" />
+      <Task ClientID="52" ProjectID="122" TaskID="206" TaskName="Project Management and Admin" />
+    </Project>
+    <Project ClientID="52" ProjectID="123" ProjectName="PAIA">
+      <Task ClientID="52" ProjectID="123" TaskID="207" TaskName="Documentation" />
+      <Task ClientID="52" ProjectID="123" TaskID="208" TaskName="Website Development" />
+    </Project>
+  </Client>
+  <Client ClientID="53" ClientName="JGP Engineers">
+    <Project ClientID="53" ProjectID="137" ProjectName="Lesotho Lowlands">
+      <Task ClientID="53" ProjectID="137" TaskID="255" TaskName="Project Initialisation" />
+      <Task ClientID="53" ProjectID="137" TaskID="256" TaskName="Story Book Development" />
+      <Task ClientID="53" ProjectID="137" TaskID="257" TaskName="Functional Specification" />
+      <Task ClientID="53" ProjectID="137" TaskID="258" TaskName="Application Development" />
+      <Task ClientID="53" ProjectID="137" TaskID="259" TaskName="Beta testing &amp; Bug fixing" />
+      <Task ClientID="53" ProjectID="137" TaskID="260" TaskName="Launch Application &amp; Training " />
+    </Project>
+  </Client>
+  <Client ClientID="54" ClientName="City of Mhlathuze">
+    <Project ClientID="54" ProjectID="138" ProjectName="OBBT">
+      <Task ClientID="54" ProjectID="138" TaskID="261" TaskName="Development" />
+    </Project>
+  </Client>
+  <Client ClientID="55" ClientName="Ugu District Municipality">
+    <Project ClientID="55" ProjectID="143" ProjectName="Ugu Project Tracking">
+      <Task ClientID="55" ProjectID="143" TaskID="270" TaskName="Project Tracker Management" />
+      <Task ClientID="55" ProjectID="143" TaskID="271" TaskName="Project Tracker Coding" />
+      <Task ClientID="55" ProjectID="143" TaskID="272" TaskName="Project Tracker Implementation" />
+      <Task ClientID="55" ProjectID="143" TaskID="273" TaskName="Project Tracker Training" />
+      <Task ClientID="55" ProjectID="143" TaskID="274" TaskName="Project Tracker Support" />
+    </Project>
+  </Client>
+  <Client ClientID="56" ClientName="Msunduzi Local Municipality" />
+  <Client ClientID="57" ClientName="Sappi Fibre Processing">
+    <Project ClientID="57" ProjectID="144" ProjectName="Enstra Data Manager">
+      <Task ClientID="57" ProjectID="144" TaskID="275" TaskName="Design" />
+      <Task ClientID="57" ProjectID="144" TaskID="276" TaskName="Development" />
+      <Task ClientID="57" ProjectID="144" TaskID="277" TaskName="Implementation" />
+      <Task ClientID="57" ProjectID="144" TaskID="278" TaskName="Project Management" />
+    </Project>
+  </Client>
+  <Client ClientID="58" ClientName="Umlalazi Local Municipality">
+    <Project ClientID="58" ProjectID="152" ProjectName="Umlalazi GIS Support">
+      <Task ClientID="58" ProjectID="152" TaskID="293" TaskName="GIS Support" />
+      <Task ClientID="58" ProjectID="152" TaskID="294" TaskName="Cad Conversion" />
+      <Task ClientID="58" ProjectID="152" TaskID="295" TaskName="Training" />
+      <Task ClientID="58" ProjectID="152" TaskID="296" TaskName="Hardware Setup" />
+    </Project>
+  </Client>
+  <Client ClientID="59" ClientName="KZNFPA">
+    <Project ClientID="59" ProjectID="154" ProjectName="KZNFPA GIS Support">
+      <Task ClientID="59" ProjectID="154" TaskID="301" TaskName="GIS Support" />
+    </Project>
+  </Client>
+  <Client ClientID="60" ClientName="Ethikweni Municipality">
+    <Project ClientID="60" ProjectID="155" ProjectName="Dalisu II Phase II">
+      <Task ClientID="60" ProjectID="155" TaskID="302" TaskName="Dalusi II Pahse II" />
+    </Project>
+  </Client>
+  <Client ClientID="61" ClientName="OR Tambo District Municipality">
+    <Project ClientID="61" ProjectID="162" ProjectName="OR Tambo DIMS">
+      <Task ClientID="61" ProjectID="162" TaskID="309" TaskName="Readiness Assessment" />
+      <Task ClientID="61" ProjectID="162" TaskID="310" TaskName="DIMS Implementation Phase I" />
+      <Task ClientID="61" ProjectID="162" TaskID="311" TaskName="DIMS Implementation Phase II" />
+      <Task ClientID="61" ProjectID="162" TaskID="312" TaskName="- IDP" />
+      <Task ClientID="61" ProjectID="162" TaskID="313" TaskName="- Project Managment" />
+      <Task ClientID="61" ProjectID="162" TaskID="314" TaskName="- Perfromance Management" />
+      <Task ClientID="61" ProjectID="162" TaskID="315" TaskName="- Asset Management" />
+      <Task ClientID="61" ProjectID="162" TaskID="316" TaskName="- Finance" />
+      <Task ClientID="61" ProjectID="162" TaskID="317" TaskName="- Procurement" />
+      <Task ClientID="61" ProjectID="162" TaskID="318" TaskName="- Human Resources" />
+      <Task ClientID="61" ProjectID="162" TaskID="319" TaskName="- Office Management" />
+      <Task ClientID="61" ProjectID="162" TaskID="320" TaskName="- Systems Management" />
+      <Task ClientID="61" ProjectID="162" TaskID="321" TaskName="- Data Exchange" />
+      <Task ClientID="61" ProjectID="162" TaskID="322" TaskName="- Integrated Development" />
+    </Project>
+  </Client>
+  <Client ClientID="62" ClientName="SiVEST SA (Pty) Ltd">
+    <Project ClientID="62" ProjectID="161" ProjectName="Settlement Verification">
+      <Task ClientID="62" ProjectID="161" TaskID="308" TaskName="GIS Services" />
+    </Project>
+  </Client>
+  <Client ClientID="63" ClientName="TCS Logistics">
+    <Project ClientID="63" ProjectID="163" ProjectName="TCS Logistics IT Support">
+      <Task ClientID="63" ProjectID="163" TaskID="323" TaskName="IT Support" />
+    </Project>
+  </Client>
+  <Client ClientID="64" ClientName="Mthonjaneni Local Municipality">
+    <Project ClientID="64" ProjectID="164" ProjectName="Mthongeneni GIS">
+      <Task ClientID="64" ProjectID="164" TaskID="324" TaskName="GIS Support" />
+      <Task ClientID="64" ProjectID="164" TaskID="325" TaskName="Training" />
+      <Task ClientID="64" ProjectID="164" TaskID="326" TaskName="Hardware Setup" />
+    </Project>
+  </Client>
+  <Client ClientID="65" ClientName="Cointel VAS (Pty) Ltd" />
+  <Client ClientID="66" ClientName="Pat Luckin Planning">
+    <Project ClientID="66" ProjectID="167" ProjectName="Ezingolweni LUMS">
+      <Task ClientID="66" ProjectID="167" TaskID="331" TaskName="Programme Management" />
+    </Project>
+    <Project ClientID="66" ProjectID="168" ProjectName="Umuziwabantu LUMS">
+      <Task ClientID="66" ProjectID="168" TaskID="332" TaskName="Programme Management" />
+    </Project>
+  </Client>
+  <Client ClientID="67" ClientName="DDS" />
+  <Client ClientID="68" ClientName="COD Mapping">
+    <Project ClientID="68" ProjectID="139" ProjectName="COD Mapping">
+      <Task ClientID="68" ProjectID="139" TaskID="262" TaskName="Sani2c" />
+    </Project>
+  </Client>
+</DOCUMENT>

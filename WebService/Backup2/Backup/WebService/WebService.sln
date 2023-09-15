@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WebService", "http://localhost/TimeTrax/WebService/WebService.vbproj", "{F036AAC6-9139-482B-8256-2746BEFA626A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F036AAC6-9139-482B-8256-2746BEFA626A}.Debug.ActiveCfg = Debug|.NET
+		{F036AAC6-9139-482B-8256-2746BEFA626A}.Debug.Build.0 = Debug|.NET
+		{F036AAC6-9139-482B-8256-2746BEFA626A}.Release.ActiveCfg = Release|.NET
+		{F036AAC6-9139-482B-8256-2746BEFA626A}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

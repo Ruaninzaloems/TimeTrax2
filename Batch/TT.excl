@@ -1,0 +1,15 @@
+.config
+.css
+.resx
+.cvsignore
+\.svn
+\WebService\
+\_vti_
+\Upload\
+\Images
+Style*.*
+errorpage.htm
+data.xml
+dynAdd.*
+\CVS
+\SQL

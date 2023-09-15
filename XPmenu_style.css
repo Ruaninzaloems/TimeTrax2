@@ -1,0 +1,124 @@
+/* This is the default style for the menu. This relates to the top level of the menu.*/
+.MenuClass
+{
+	cursor: hand;
+	border-color: #EFEFE9;
+	border-width: 2px;
+	border-style: none;
+	letter-spacing: 0px;
+	font-family: tahoma;
+	font-variant:normal;
+	height: 22px;
+	font-size: 11px;
+	background-color: #EFEFE9;
+	background-image: url(images/MenuImages/gradient2.gif);
+}
+
+/* This is the default style for the menu. This relates to the top level of the menu.*/
+.TopItemClass
+{
+	/*
+	background-image:url(images/MenuImages/button.gif);
+	width:134px;
+	*/
+	background-color: #EFEFE9;
+	color: #000000;
+	border-top: 1px solid #EFEFE9;
+	border-right: 1px solid #EFEFE9;
+	border-left: 1px solid #EFEFE9;
+	border-bottom: 1px solid #EFEFE9;
+	padding-right:5px;
+	padding-left:5px;
+}
+
+/* This is the style for the hover on the top level of the menu.*/
+.TopHover
+{
+	background-color: #EFEFE9;
+	color: #000000;
+	border-top: 1px solid #EFEFE9;
+	border-right: 1px solid #CECEC3;
+	border-left: 1px solid #CECEC3;
+	border-bottom: 1px solid #EFEFE9;
+	padding-right:5px;
+	padding-left:5px;
+}
+
+/* This is the style for the selected item on the top level of the menu.*/
+.TopSelectedClass
+{
+	background-color: #316AC5;
+	color: #FFFFFF;
+	border-top: 1px solid #316AC5;
+	border-right: 1px solid #316AC5;
+	border-left: 1px solid #316AC5;
+	border-bottom: 1px solid #316AC5;
+	padding-right:5px;
+	padding-left:5px;
+}
+
+/* This is the style for the current selected item.*/
+.ItemSelectedClass
+{
+	background-color: #316AC5;
+	color: #FFFFFF;
+	border-top: 1px solid #316AC5;
+	border-right: 1px solid #316AC5;
+	border-left: 1px solid #316AC5;
+	border-bottom: 1px solid #316AC5;
+	padding-right:5px;
+	padding-left:5px;
+}
+
+/* This is the default style for the menu sub item. You need to reset the font size etc as it does not inherit from the main class.*/
+.SubItemClass
+{
+	cursor: hand;
+	background-color: #ffffff;
+	color: #000000;
+	border: 0px;
+	font-size: 11px;
+	font-family: tahoma;
+	border-top: 1px solid #ACA899;
+	border-right: 1px solid #ACA899;
+	border-left: 1px solid #ACA899;
+	border-bottom: 1px solid #ACA899;
+	height: 22px;
+	letter-spacing: 0px;
+}
+
+/* This is the style for the hover on the lower levels of the menu.*/
+.SubHoverClass
+{
+	background-color: #316AC5;
+	color: #FFFFFF;
+}
+
+/* This is the style for the separators on the lower levels of the menu.*/
+.SeparatorClass
+{
+	background-color: #ACA899;
+	padding: 0px;
+	height: 0px;
+}
+
+/* This is the style for the disabled items on the menu.*/
+.DisabledClass
+{
+	cursor: default;
+	background-color: #F2F2E5;
+	color: #A6A6A0;
+}
+
+/* This is the style for the navigation bar below the menu.*/
+.NavigationBarClass
+{
+	position:absolute;
+	left:5px;
+	top:24px;
+	color: #92928D;
+	font-size:  11px;
+	font-weight: normal;
+	font-family: tahoma;
+}
+

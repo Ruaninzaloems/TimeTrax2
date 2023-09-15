@@ -1,0 +1,13 @@
+C:\Data\TimeTrax\WebService\bin\WebService.dll
+C:\Data\TimeTrax\WebService\bin\WebService.pdb
+C:\Data\TimeTrax\WebService\bin\WebService.xml
+C:\Data\TimeTrax\WebService\bin\Intermap.DataLayer.dll
+C:\Data\TimeTrax\WebService\obj\Debug\WebService.vbprojAssemblyReference.cache
+C:\Data\TimeTrax\WebService\obj\Debug\WebService.Global.resources
+C:\Data\TimeTrax\WebService\obj\Debug\WebService.TTX.resources
+C:\Data\TimeTrax\WebService\obj\Debug\WebService.vbproj.GenerateResource.cache
+C:\Data\TimeTrax\WebService\obj\Debug\WebService.vbproj.CopyComplete
+C:\Data\TimeTrax\WebService\obj\Debug\WebService.dll
+C:\Data\TimeTrax\WebService\obj\Debug\WebService.xml
+C:\Data\TimeTrax\WebService\obj\Debug\WebService.pdb
+C:\Data\TimeTrax\WebService\obj\Debug\WebService.vbproj.CoreCompileInputs.cache

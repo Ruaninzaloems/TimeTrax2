@@ -1,0 +1,168 @@
+Imports System.Web
+Imports System.Web.Mail
+Imports System.Web.SessionState
+Imports System.Collections
+Imports System.Security
+Imports System.Security.Principal
+
+
+
+Public Class [Global]
+    Inherits System.Web.HttpApplication
+    Public Const ReturnUrl As String = "Default.aspx"
+
+#Region " Component Designer Generated Code "
+
+    Public Sub New()
+        MyBase.New()
+
+        'This call is required by the Component Designer.
+        InitializeComponent()
+
+        'Add any initialization after the InitializeComponent() call
+
+    End Sub
+
+    'Required by the Component Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Component Designer
+    'It can be modified using the Component Designer.
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
+        components = New System.ComponentModel.Container()
+    End Sub
+
+#End Region
+
+    Sub Application_Start(ByVal sender As Object, ByVal e As EventArgs)
+        ' Fires when the application is started
+    End Sub
+
+    Sub Session_Start(ByVal sender As Object, ByVal e As EventArgs)
+        ' Fires when the session is started
+        'Check to see if the app is running on the live server - the DB Connection and Server IP are kept in the machine.config file.
+        If Request.ServerVariables("LOCAL_ADDR") = ConfigurationSettings.AppSettings("LiveServerIP") Then
+            Dim referer As String
+            If Request.ServerVariables("HTTP_REFERER") Is Nothing Then
+                referer = ""
+            Else
+                referer = Request.ServerVariables("HTTP_REFERER")
+            End If
+
+            Dim SDBConn As String = ConfigurationSettings.AppSettings("SessionDBConn")
+
+            Dim arParms() As SqlParameter = New SqlParameter(10) {}
+            arParms(0) = New SqlParameter("@Domain", ConfigurationSettings.AppSettings("DomainName"))
+            arParms(1) = New SqlParameter("@System", ConfigurationSettings.AppSettings("ApplicationName"))
+            arParms(2) = New SqlParameter("@Event", "Session Start")
+            arParms(3) = New SqlParameter("@Referer", referer)
+            arParms(4) = New SqlParameter("@Url", Request.ServerVariables("URL"))
+            arParms(5) = New SqlParameter("@UA", Request.ServerVariables("HTTP_USER_AGENT"))
+            arParms(6) = New SqlParameter("@IP", Request.ServerVariables("REMOTE_ADDR"))
+            arParms(7) = New SqlParameter("@HostName", Request.ServerVariables("REMOTE_HOST"))
+            arParms(8) = New SqlParameter("@Lan", Request.ServerVariables("HTTP_ACCEPT_LANGUAGE"))
+            arParms(9) = New SqlParameter("@Browser", Request.Browser.Type)
+            arParms(10) = New SqlParameter("@OS", Request.Browser.Platform)
+
+            SqlHelper.ExecuteNonQuery(SDBConn, CommandType.StoredProcedure, "IMASP_WriteSessions", arParms)
+        End If
+    End Sub
+
+    Sub Application_BeginRequest(ByVal sender As Object, ByVal e As EventArgs)
+        ' Fires at the beginning of each request
+    End Sub
+
+    Sub Application_AuthenticateRequest(ByVal sender As Object, ByVal e As EventArgs)
+
+
+        Dim authID As String
+
+        Dim DBConn = ConfigurationSettings.AppSettings("DBConn")
+
+        If Not Me.Request.IsAuthenticated Then
+            ' This is used for Mixed Authenitication
+            Dim start As Integer = Me.Request.Path.LastIndexOf("/")
+            Dim path As String = Me.Request.Path.Substring((start + 1))
+            '-- VF 23/01/2007 : Dont try Authenticate if loading timeout page
+            If path.ToUpper = "TIMEOUT.ASPX" Then
+                Exit Sub
+            End If
+            If path.ToUpper() <> "WEBLOGIN.ASPX" And path.ToUpper() <> "WINLOGIN.ASPX" Then
+
+                Me.Response.Cookies([Global].ReturnUrl).Value = Me.Request.Path
+                '-- Check if Win Authentication must be used
+                If SqlHelper.ExecuteScalar(DBConn, CommandType.StoredProcedure, "TT_GetAuthenticationMethod") Then
+                    Response.Redirect(Request.ApplicationPath & "\WinLogin.aspx")
+                Else
+                    Response.Redirect(Request.ApplicationPath & "\WebLogin.aspx")
+                End If
+            End If
+        Else
+            authID = Request.Cookies("User").Values("UserID")
+            Common.LoadRoles(Context, authID)
+        End If
+    End Sub
+
+    Sub Application_Error(ByVal sender As Object, ByVal e As EventArgs)
+        ' Fires when an error occurs
+        'Check to see if the app is running on the live server - the DB Connection and Server IP are kept in the machine.config file.
+        If Request.ServerVariables("LOCAL_ADDR") = ConfigurationSettings.AppSettings("LiveServerIP") Then
+            Dim msg As MailMessage = New MailMessage
+            Dim Body As String
+
+            Body = "The following error occured: "
+            Body &= vbCrLf & vbCrLf
+            Body &= Server.GetLastError().InnerException.ToString()
+
+            Body &= vbCrLf & vbCrLf
+            Body &= Request.Url.ToString()
+
+            Body &= GetUserDetails()
+
+            SmtpMail.SmtpServer = ConfigurationSettings.AppSettings("SMTPServer")
+            msg.Body = Body
+            msg.To = ConfigurationSettings.AppSettings("SupportEmail")
+            msg.From = "errors@intermap.co.za"
+            msg.Subject = ConfigurationSettings.AppSettings("DomainName") & " - " & ConfigurationSettings.AppSettings("ApplicationName") & " Application Error"
+            SmtpMail.Send(msg)
+        End If
+    End Sub
+
+    Function GetUserDetails() As String
+        'Do DB lookup for role
+        Dim DBConnStr = ConfigurationSettings.AppSettings("DBConn")
+        Dim MyConnection As SqlConnection = New SqlConnection(DBConnStr)
+        Dim MyCommand As SqlCommand
+        Dim MyDataReader As SqlDataReader
+        'Run sproc that returns user details
+        MyConnection = New SqlConnection(DBConnStr)
+        MyCommand = New SqlCommand("Usr_SelectUserDetails", MyConnection)
+        MyCommand.CommandType = CommandType.StoredProcedure
+
+        MyCommand.Parameters.Add("@Username", Request.Cookies("User").Values("FirstName"))
+
+        Dim strUserDetail As String
+        MyConnection.Open()
+        MyDataReader = MyCommand.ExecuteReader()
+        While MyDataReader.Read
+            strUserDetail = vbCrLf & vbCrLf & "User Name: " & MyDataReader.Item("FullName")
+            strUserDetail &= vbCrLf & "Email Address: " & MyDataReader.Item("Email")
+            strUserDetail &= vbCrLf & "Tel No: " & MyDataReader.Item("TelNo")
+            strUserDetail &= vbCrLf
+        End While
+        MyDataReader.Close()
+        MyConnection.Close()
+
+        Return strUserDetail
+    End Function
+
+    Sub Session_End(ByVal sender As Object, ByVal e As EventArgs)
+        ' Fires when the session ends
+    End Sub
+
+    Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)
+        ' Fires when the application ends
+    End Sub
+
+End Class

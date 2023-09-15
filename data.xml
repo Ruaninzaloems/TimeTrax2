@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<DOCUMENT>
+  <golfer firstName="Gary" lastName="Player" skill="poor" handicap="10" clubs="Wilson">
+    <favoriteCourses Golfer="1">
+      <course city="Pinetop" state="AZ" name="Pinetop Lakes CC" />
+      <course city="Phoenix" state="AZ" name="Ocitillo" />
+      <course city="Snowflake" state="AZ" name="Silver Creek" />
+    </favoriteCourses>
+  </golfer>
+  <golfer firstName="Ernie" lastName="Els" skill="excellent" handicap="12" clubs="Spalding">
+    <favoriteCourses Golfer="2">
+      <course city="Pinetop" state="AZ" name="Pinetop Lakes CC" />
+      <course city="Snowflake" state="AZ" name="Silver Creek" />
+    </favoriteCourses>
+  </golfer>
+  <golfer firstName="Tiger" lastName="Woods" skill="moderate" handicap="11" clubs="Ping">
+    <favoriteCourses Golfer="3">
+      <course city="Phoenix" state="AZ" name="Ocitillo" />
+      <course city="Snowflake" state="AZ" name="Silver Creek" />
+    </favoriteCourses>
+  </golfer>
+</DOCUMENT>
